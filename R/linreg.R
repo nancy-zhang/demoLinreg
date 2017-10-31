@@ -15,6 +15,7 @@
 #'
 #' @export
 #'
+#'
 linmodEst <- function(x, y) {
   ## CC: crossprod or a QR decomposition (as in the original version) are more efficient
   coef <- solve(t(x) %*% x) %*% t(x) %*% y
